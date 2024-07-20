@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb0fc"
+  },
+  "id": 1,
+  "nombre": "Plátanos",
+  "precio": 1000,
+  "descripcion": "Plátanos del Congo",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://s3.abcstatics.com/media/bienestar/2019/07/25/platano-beneficios-kIyF--1248x698@abc.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb0fd"
+  },
+  "id": 2,
+  "nombre": "Manzanas",
+  "precio": 1300,
+  "descripcion": "Manzanas rojas",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 500,
+  "stock": 500,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://elegifruta.com.ar/wp-content/uploads/2017/07/manzana_roja.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb0fe"
+  },
+  "id": 3,
+  "nombre": "Pan",
+  "precio": 1200,
+  "descripcion": "Marraquetas",
+  "categoria": [
+    "Pan"
+  ],
+  "subCategoria": "panes",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 70,
+  "stock": 70,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.gastronomiavasca.net/uploads/image/file/4326/w700_pan.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb0ff"
+  },
+  "id": 4,
+  "nombre": "Peras",
+  "precio": 1500,
+  "descripcion": "Peras verdes",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 300,
+  "stock": 300,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://content.cuerpomente.com/medio/2024/05/28/pera_8ea4bd9a_240528181735_1200x630.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb100"
+  },
+  "id": 5,
+  "nombre": "Lechuga",
+  "precio": 800,
+  "descripcion": "Lechuga fresca",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 200,
+  "stock": 200,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.semana.com/resizer/v2/3REV53527RABTL2YCEI3KJZWAM.jpg?auth=8fd4628213a5e3d840d22bf7695b23bbd13bef1d43655fc2aacf816785f089ca&smart=true&quality=75&width=1280&height=720"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb101"
+  },
+  "id": 6,
+  "nombre": "Tomates",
+  "precio": 1800,
+  "descripcion": "Tomates rojos",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 150,
+  "stock": 150,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThdtogrPsOcQeuKm62SJPEtDkgK6_WNZ02ppcOec5gepVlso_J"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb102"
+  },
+  "id": 7,
+  "nombre": "Cebollas",
+  "precio": 1000,
+  "descripcion": "Cebollas moradas",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTuILcTeqxUrz7xkkTgBkR0kjhBet0VTp56AMf5Du-NqjX4m8QTknHW7IKfo96IHyrlYm9n-28cDa0TCc7PujcSARWZcDTcVxk_JkN3tdceyIbrZz4kRxPbyA&usqp=CAE"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb103"
+  },
+  "id": 8,
+  "nombre": "Zanahorias",
+  "precio": 1200,
+  "descripcion": "Zanahorias frescas",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 200,
+  "stock": 200,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://mejorconsalud.as.com/wp-content/uploads/2015/08/comer-muchas-zanahorias.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb104"
+  },
+  "id": 9,
+  "nombre": "Uvas",
+  "precio": 2000,
+  "descripcion": "Uvas verdes",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://s2.ppllstatics.com/elcorreo/www/multimedia/2023/09/14/despensa1-kdfC-U210159430079JSB-1200x840@El%20Correo.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb105"
+  },
+  "id": 10,
+  "nombre": "Papas",
+  "precio": 800,
+  "descripcion": "Papas blancas",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 300,
+  "stock": 300,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.latercera.com/resizer/_fJtZ_csefLO-N5aH0_ZZ5goIE4=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/RYLE7N5WWJGQ5KA5K4ZCACFSTQ.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb106"
+  },
+  "id": 11,
+  "nombre": "Naranjas",
+  "precio": 1100,
+  "descripcion": "Naranjas dulces",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 150,
+  "stock": 150,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://camposdeazahar.es/wp-content/uploads/2023/11/naranjas-rojas-cara-cara.jpeg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb107"
+  },
+  "id": 12,
+  "nombre": "Sandía",
+  "precio": 3000,
+  "descripcion": "Sandía dulce",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 50,
+  "stock": 50,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://imagenes.heraldo.es/files/image_990_556/uploads/imagenes/2023/07/25/sandia-fruta-gsc1.jpeg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb108"
+  },
+  "id": 13,
+  "nombre": "Paltas",
+  "precio": 2500,
+  "descripcion": "Paltas cremosas",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 80,
+  "stock": 80,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://cdn2.lomi.cl/cdn-cgi/image/width=475,height=475,quality=75,f=auto,fit=pad/bt2splw8w6ghoc9tiaa9sspwl4ys.png"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb109"
+  },
+  "id": 14,
+  "nombre": "Melones",
+  "precio": 2800,
+  "descripcion": "Melones dulces",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "ud",
+  "valorConversion": 1,
+  "stockInicial": 60,
+  "stock": 60,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.imporalaska.com/uploads/products/2019/09/pic_1567613134_1567613137.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10a"
+  },
+  "id": 15,
+  "nombre": "Pimientos",
+  "precio": 2000,
+  "descripcion": "Pimientos rojos y verdes",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 120,
+  "stock": 120,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.salud.mapfre.es/media/2021/11/destacado-pimiento.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10b"
+  },
+  "id": 16,
+  "nombre": "Limones",
+  "precio": 1500,
+  "descripcion": "Limones ácidos",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "frutas",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.recetasnestle.com.pe/sites/default/files/2022-05/tipos-de-limones-verdes-cortados.jpg.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10c"
+  },
+  "id": 17,
+  "nombre": "Espárragos",
+  "precio": 3500,
+  "descripcion": "Espárragos frescos",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 80,
+  "stock": 80,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.lavanguardia.com/files/image_948_465/uploads/2019/05/13/5e9984c5097ac.jpeg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10d"
+  },
+  "id": 18,
+  "nombre": "Brócoli",
+  "precio": 2800,
+  "descripcion": "Brócoli fresco",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://jumbo.vtexassets.com/arquivos/ids/424497/Brocoli-unid.jpg?v=637521224580230000"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10e"
+  },
+  "id": 19,
+  "nombre": "Pepinos",
+  "precio": 1200,
+  "descripcion": "Pepinos frescos",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 150,
+  "stock": 150,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2022-06/Type%20of%20cucumber.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb10f"
+  },
+  "id": 20,
+  "nombre": "Calabacines",
+  "precio": 1000,
+  "descripcion": "Calabacines verdes",
+  "categoria": [
+    "fruta y verduras"
+  ],
+  "subCategoria": "verduras",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 120,
+  "stock": 120,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://metode.es/wp-content/uploads/2015/05/104-85ros.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb110"
+  },
+  "id": 21,
+  "nombre": "Jamón Cocido",
+  "precio": 1500,
+  "descripcion": "Jamón cocido de alta calidad",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "jamones",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 80,
+  "stock": 80,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://s03.s3c.es/imag/_v0/1200x655/1/0/2/jamon-codido-iStock-488330599.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb111"
+  },
+  "id": 22,
+  "nombre": "Salchichón",
+  "precio": 1200,
+  "descripcion": "Salchichón español",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "embutidos",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 50,
+  "stock": 50,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://previews.123rf.com/images/nito500/nito5001207/nito500120700153/14476273-un-mont%C3%B3n-de-salchich%C3%B3n-salami-espa%C3%B1ol-sobre-un-fondo-blanco.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb112"
+  },
+  "id": 23,
+  "nombre": "Mortadela",
+  "precio": 900,
+  "descripcion": "Mortadela clásica",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "embutidos",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 70,
+  "stock": 70,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.clarin.com/img/2023/08/15/IID65HpjE_2000x1500__1.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb113"
+  },
+  "id": 24,
+  "nombre": "Queso Gouda",
+  "precio": 2000,
+  "descripcion": "Queso Gouda holandés",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "quesos",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 60,
+  "stock": 60,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://www.avellanuts.cl/wp-content/uploads/2022/01/queso-gouda.jpeg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb114"
+  },
+  "id": 25,
+  "nombre": "Chorizo",
+  "precio": 1300,
+  "descripcion": "Chorizo ibérico",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "embutidos",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 40,
+  "stock": 40,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://eldiariony.com/wp-content/uploads/sites/2/2022/09/Chorizo-mexicano-shutterstock_1634510236.jpg?w=1200"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb115"
+  },
+  "id": 26,
+  "nombre": "Queso Cheddar",
+  "precio": 1800,
+  "descripcion": "Queso Cheddar inglés",
+  "categoria": [
+    "fiambres"
+  ],
+  "subCategoria": "quesos",
+  "unidadMedida": "kilo",
+  "valorConversion": 1,
+  "stockInicial": 55,
+  "stock": 55,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDcOfk2-rfIkeYoz4rI_0V05KCVB2ideo4jqaGRWDTcYkU9XalGRe2FulZ7JlhiH3JVVABD8eb28G7TaQnm1z6W45kRdiiVCQMz2lgUk-kmEEWEQkCzSUPzcOv&usqp=CAE"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb116"
+  },
+  "id": 27,
+  "nombre": "Fideos Spaghetti",
+  "precio": 500,
+  "descripcion": "Fideos Spaghetti de trigo duro",
+  "categoria": [
+    "fideos"
+  ],
+  "subCategoria": "pasta larga",
+  "unidadMedida": "paquete",
+  "valorConversion": 1,
+  "stockInicial": 100,
+  "stock": 100,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://imgmedia.buenazo.pe/475x475/buenazo/original/2020/09/29/5f73c77b8770e83957064d74.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb117"
+  },
+  "id": 28,
+  "nombre": "Fideos Penne",
+  "precio": 550,
+  "descripcion": "Fideos Penne de trigo duro",
+  "categoria": [
+    "fideos"
+  ],
+  "subCategoria": "pasta corta",
+  "unidadMedida": "paquete",
+  "valorConversion": 1,
+  "stockInicial": 90,
+  "stock": 90,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://previews.123rf.com/images/peterhermesfurian/peterhermesfurian1610/peterhermesfurian161000125/65467388-penne-rigate-pasta-en-un-taz%C3%B3n-de-madera-fideos-de-s%C3%A9mola-de-trigo-duro-seco-sin-cocer-tubos.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb118"
+  },
+  "id": 29,
+  "nombre": "Fideos Fusilli",
+  "precio": 600,
+  "descripcion": "Fideos Fusilli de trigo duro",
+  "categoria": [
+    "fideos"
+  ],
+  "subCategoria": "pasta corta",
+  "unidadMedida": "paquete",
+  "valorConversion": 1,
+  "stockInicial": 110,
+  "stock": 110,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://previews.123rf.com/images/prill/prill1410/prill141000088/32565919-completo-marco-de-fondo-italiano-de-pasta-con-un-mont%C3%B3n-de-fideos-fusilli.jpg"
+},
+{
+  "_id": {
+    "$oid": "669ae2f42d203519ebddb119"
+  },
+  "id": 30,
+  "nombre": "Fideos Lasagna",
+  "precio": 650,
+  "descripcion": "Fideos Lasagna de trigo duro",
+  "categoria": [
+    "fideos"
+  ],
+  "subCategoria": "pasta larga",
+  "unidadMedida": "paquete",
+  "valorConversion": 1,
+  "stockInicial": 85,
+  "stock": 85,
+  "fechaCreacion": "2024-07-18T00:00:00Z",
+  "fechaActualizacion": "2024-07-18T00:00:00Z",
+  "urlFoto": "https://previews.123rf.com/images/bdcollins/bdcollins1411/bdcollins141100056/33393339-secos-procesados-fideos-de-lasa%C3%B1a-aislados-en-blanco.jpg"
+}]
