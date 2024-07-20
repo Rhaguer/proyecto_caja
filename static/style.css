@@ -156,17 +156,44 @@ nav ul li a {
 /* Estilo para los botones */
 .btn {
     display: inline-block;
-    background-color: #2600ff; /* Azul oscuro */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Alineación de botones */
+    transition: background-color 0.3s ease; /* Transición de color */
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
-.btn:hover {
-    background-color: #0056b3; /* Color hover consistente */
+/* Estilo para los botones en la cuadrícula */
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Crea 12 columnas iguales */
+    gap: 10px; /* Espaciado entre columnas */
+    margin-top: 20px;
+}
+
+/* Estilo para el botón Seguir Comprando */
+.btn-continue-shopping {
+    grid-column: 2; /* Ocupa la columna 2 */
+}
+
+/* Estilo para el botón Proceso de Pago */
+.btn-process-payment {
+    grid-column: 6; /* Ocupa la columna 6 */
+}
+
+/* Estilo para el botón Mostrar Boleta */
+.btn-show-boleta {
+    grid-column: 10; /* Ocupa la columna 10 */
+}
+
+/* Efecto hover para los botones */
+.btn-container .btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
 }
 
 /* Formulario */
@@ -229,65 +256,4 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* Botones en la fila del carrito */
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* Estilo para el botón Mostrar Boleta */
-.btn-show-boleta {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-.btn-show-boleta:hover {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-/* Estilo para el botón Proceso de Pago */
-.btn-process-payment {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-.btn-process-payment:hover {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-/* Estilo para el botón Seguir Comprando */
-.btn-continue-shopping {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-.btn-continue-shopping:hover {
-    background-color: #0056b3; /* Azul oscuro */
-    border-color: #0056b3;
-}
-
-/* Botones en la fila del carrito alineados */
-.btn-container {
-    display: flex;
-    justify-content: space-between; /* Alinea los botones en la fila */
-}
-
-.btn-container .btn {
-    flex: 1; /* Asegura que los botones ocupen el mismo espacio */
-    margin: 0 10px; /* Espaciado entre los botones */
-}
-
-/* Alineación específica para los botones */
-.btn-continue-shopping {
-    margin-right: auto; /* Empuja el botón al extremo derecho */
-}
-
-.btn-show-boleta {
-    margin-right: auto; /* Empuja el botón al extremo izquierdo */
 }
