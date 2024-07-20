@@ -11,6 +11,24 @@
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous" />
+        <style>
+            .map-container {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 400px; /* Adjust the height as needed */
+                overflow: hidden;
+                max-width: 100%;
+                background: transparent;
+                margin-bottom: 20px; /* Add some space below the map */
+            }
+            .map-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-primary"
@@ -67,13 +85,34 @@
                     <p><strong>Docente:</strong> Victor Javier Andrade
                         Farías</p>
                     <p><strong>Correo Electrónico:</strong> <a
-                            href="mailto:miguel.fernandez39@inacapmail.cl">ricardo.haguer@inacapmail.cl</a></p>
-                    <p><strong>Año:</strong> 19-07-2024</p>
+                            href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a></p>
+                    <p><strong>Año:</strong> 19/07/2024</p>
                 </div>
             </div>
         </div>
-
-        <footer>
+        <div class="container mt-5">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7537244952055!2d-70.58597221877329!3d-33.58574303568418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d718a032972d%3A0x45da5699698e2261!2sINACAP%20Puente%20Alto!5e0!3m2!1ses!2ses!4v1721457388226!5m2!1ses!2ses"
+                    frameborder="0" style="border:0; width: 100%; height: 100%;"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="contact-info mt-4">
+                <h3>Contactos de Sede Inacap Puente Alto</h3>
+                <hr>
+                <h4 class="pt-2">Inacap Puente Alto</h4>
+                <i class="fas fa-globe" style="color:#000"></i> Av. Concha y
+                Toro 2730, 8150215 Puente Alto, Región Metropolitana<br>
+                <h4 class="pt-2">Contacto</h4>
+                <i class="fab fa-whatsapp" style="color:#000"></i> <a
+                    href="tel:+56963325630">+56963325630</a><br>
+                <h4 class="pt-2">Email</h4>
+                <i class="fa fa-envelope" style="color:#000"></i> <a
+                    href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a><br>
+            </div>
+        </div>
+        <br><br>
+        <footer class="text-center">
             <p>&copy; 2024 Sistema de Venta - Minimarket. Todos los derechos
                 reservados.</p>
         </footer>
