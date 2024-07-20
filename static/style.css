@@ -11,43 +11,6 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.container {
-    margin-top: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.hr {
-    border-top: 1px solid #ccc;
-}
-
-#contact2 h4 {
-    margin-top: 20px;
-}
-
-.fa-globe, .fa-whatsapp, .fa-envelope {
-    margin-right: 8px;
-}
-
-footer {
-    background: linear-gradient(to right, #003366, #7faad5); /* Degradado de azul oscuro a azul pastel */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-iframe {
-    border: 0;
-}
-
 
 /* Contenedor principal */
 .container {
@@ -55,11 +18,16 @@ iframe {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Flexbox */
 .flex {
     display: flex;
 }
 
-/* Estilos para tarjetas */
+body {
+    background-color: #f8f9fa;
+}
+
 .card {
     height: 100%;
     border: none;
@@ -68,69 +36,97 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
+
 .card:hover {
     transform: translateY(-10px);
 }
+
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .card-img-top {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ffffff;
 }
+
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
 }
+
 .card-text {
     font-size: 1rem;
     color: #6c757d;
 }
+
 .card-footer {
     background-color: transparent;
     border-top: none;
     text-align: center;
 }
 
-/* Estilo para los botones */
 .btn-primary {
     background-color: #6c63ff;
     border: none;
     transition: background-color 0.3s ease;
 }
+
 .btn-primary:hover {
     background-color: #5549d8;
 }
+
+.table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.table thead th {
+    background-color: #6c63ff;
+    color: white;
+    border-bottom: 2px solid #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
 .btn-danger {
     background-color: #dc3545;
     border-color: #dc3545;
 }
+
 .btn-danger:hover {
     background-color: #c82333;
     border-color: #bd2130;
 }
 
-/* Estilos para tablas */
-.table img {
-    max-width: 100px;
-    height: auto;
-}
-.table thead th {
+.btn-primary {
     background-color: #6c63ff;
-    color: white;
-    border-bottom: 2px solid #6c63ff;
+    border-color: #ffffff;
 }
-.table tbody tr:hover {
-    background-color: #f2f2f2;
+
+.btn-primary:hover {
+    background-color: #5549d8;
+    border-color: #ffffff;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.actions {
+    margin-top: 20px;
 }
 
 /* Encabezado */
 header {
-    background-color: #2600ff; /* Color de fondo */
+    background-color: #2600ff; /* Azul oscuro */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -138,28 +134,29 @@ header {
 
 /* Navegación */
 nav {
-    background: linear-gradient(to right, #003366, #7faad5); /* Degradado de azul oscuro a azul pastel */
-    color: #fff;
+    background-color: #2600ff; /* Azul oscuro */
     padding: 10px;
+}
+
+nav ul {
+    list-style: none;
     text-align: center;
 }
-.navbar {
-    justify-content: center; /* Centra horizontalmente el contenido */
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-.navbar-nav {
-    margin: 0 auto; /* Asegura que los elementos se centren */
-}
-.navbar-nav .nav-link {
-    color: #fff; /* Color de los enlaces */
-}
-.navbar-nav .nav-link:hover {
-    color: #d1e7dd; /* Color del texto al pasar el mouse */
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Estilo para los botones */
 .btn {
     display: inline-block;
-    background-color: #2600ff; /* Color de los botones */
+    background-color: #2600ff; /* Azul oscuro */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -167,8 +164,9 @@ nav {
     cursor: pointer;
     text-decoration: none;
 }
+
 .btn:hover {
-    background-color: #1a00cc; /* Color del botón al pasar el mouse */
+    background-color: #0056b3; /* Color hover consistente */
 }
 
 /* Formulario */
@@ -179,13 +177,16 @@ form {
     border: 1px solid #ccc;
     border-radius: 1em;
 }
+
 form div + div {
     margin-top: 1em;
 }
+
 label {
     display: block;
     margin-bottom: 0.5em;
 }
+
 input,
 textarea {
     border: 1px solid #ccc;
@@ -194,6 +195,7 @@ textarea {
     width: 100%;
     box-sizing: border-box;
 }
+
 button {
     padding: 0.7em;
     color: #fff;
@@ -203,6 +205,7 @@ button {
     cursor: pointer;
     font-size: 1em;
 }
+
 button:hover {
     background-color: #0056b3;
 }
@@ -213,6 +216,7 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 table th,
 table td {
     padding: 10px;
@@ -221,84 +225,69 @@ table td {
 
 /* Pie de página */
 footer {
-    background: linear-gradient(to right, #003366, #7faad5); /* Degradado de azul oscuro a azul pastel */
+    background-color: #2600ff; /* Azul oscuro */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-/* Otros estilos */
-.edit-button,
-.del-button {
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #007bff;
-    color: white;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s;
+/* Botones en la fila del carrito */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
-.edit-button:hover,
-.del-button:hover {
-    background-color: #0056b3;
+
+/* Estilo para el botón Mostrar Boleta */
+.btn-show-boleta {
+    background-color: #0056b3; /* Azul oscuro */
     border-color: #0056b3;
 }
-.centered-container {
-    text-align: center;
-}
-.centered-title {
-    color: #333; /* Color del subtítulo */
-}
-hr {
-    border-top: 1px solid #000;
-    width: 50%;
-}
-a {
-    color: #000;
-}
-a:link {
-    text-decoration: none;
-}
-#contact2 {
-    letter-spacing: 3px;
-}
-#author a {
-    color: #fff;
-    text-decoration: none;
-}
-.map-responsive{
 
-    overflow:hidden;
-
-    padding-bottom:56.25%;
-
-    position:relative;
-
-    height:0;
-
+.btn-show-boleta:hover {
+    background-color: #0056b3; /* Azul oscuro */
+    border-color: #0056b3;
 }
 
-.map-responsive iframe{
-
-    left:0;
-
-    top:0;
-
-    height:100%;
-
-    width:100%;
-
-    position:absolute;
-
+/* Estilo para el botón Proceso de Pago */
+.btn-process-payment {
+    background-color: #0056b3; /* Azul oscuro */
+    border-color: #0056b3;
 }
-.map-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 600px; /* Adjust the height as needed */
-    overflow: hidden;
-    max-width: 100%;
-    background: transparent;
+
+.btn-process-payment:hover {
+    background-color: #0056b3; /* Azul oscuro */
+    border-color: #0056b3;
+}
+
+/* Estilo para el botón Seguir Comprando */
+.btn-continue-shopping {
+    background-color: #0056b3; /* Azul oscuro */
+    border-color: #0056b3;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #0056b3; /* Azul oscuro */
+    border-color: #0056b3;
+}
+
+/* Botones en la fila del carrito alineados */
+.btn-container {
+    display: flex;
+    justify-content: space-between; /* Alinea los botones en la fila */
+}
+
+.btn-container .btn {
+    flex: 1; /* Asegura que los botones ocupen el mismo espacio */
+    margin: 0 10px; /* Espaciado entre los botones */
+}
+
+/* Alineación específica para los botones */
+.btn-continue-shopping {
+    margin-right: auto; /* Empuja el botón al extremo derecho */
+}
+
+.btn-show-boleta {
+    margin-right: auto; /* Empuja el botón al extremo izquierdo */
 }

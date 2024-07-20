@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from pymongo import MongoClient
 from datetime import datetime
@@ -18,7 +17,7 @@ coleccion_ventas = db['ventas']
 def index():
     return render_template('index.html')
 
-@app.route('/listar_productos')  
+@app.route('/listar_productos')
 def listar_productos():
     skip = int(request.args.get('skip', 0))
     limit = int(request.args.get('limit', 12))
@@ -44,7 +43,6 @@ def listar_productos():
     total_productos = coleccion_productos.count_documents({})
     return render_template('listar.html', productos=productos, skip=skip, limit=limit, total_productos=total_productos)
 
-# Funcionalidades de carrito y ventas
 @app.route('/carrito', methods=['GET', 'POST'])
 def carrito():
     pipeline = [
@@ -66,7 +64,6 @@ def carrito():
 def agregar_al_carrito(id):
     cantidad = int(request.form['cantidad'])
     
-    # Buscar el producto en la colección de productos
     pipeline = [
         {'$match': {'id': id}},
         {'$project': {
@@ -97,7 +94,6 @@ def agregar_al_carrito(id):
 
         if carrito_item:
             carrito_item = carrito_item[0]
-            # Si el producto ya existe en el carrito, actualizar la cantidad y el subtotal
             nueva_cantidad = carrito_item['cantidad'] + cantidad
             nuevo_subtotal = producto['precio'] * nueva_cantidad
             
@@ -106,7 +102,6 @@ def agregar_al_carrito(id):
                 {'$set': {'cantidad': nueva_cantidad, 'subtotal': nuevo_subtotal}}
             )
         else:
-            # Si el producto no existe en el carrito, agregarlo
             item_carrito = {
                 'producto_id': producto['id'],
                 'nombre': producto['nombre'],
@@ -169,7 +164,23 @@ def procesar_pago():
     # Vaciar el carrito
     coleccion_carrito.delete_many({})
     
-    return redirect(url_for('index'))
+    # Redirigir a la página de boleta con los datos
+    return redirect(url_for('boleta'))
+
+@app.route('/boleta')
+def boleta():
+    # Obtener los datos de la última venta
+    venta = coleccion_ventas.find().sort('fechaCreacion', -1).limit(1)
+    if venta:
+        venta = venta[0]
+        productos = venta['productos']
+        total = venta['total']
+    else:
+        productos = []
+        total = 0
+    
+    return render_template('boleta.html', productos=productos, total=total)
+
 
 @app.route('/nuevo')
 def nuevo():
@@ -214,8 +225,6 @@ def join_comma(value):
 def format_currency(value, decimals=2):
     format_string = "{:,.{}f}".format(value, decimals)
     return format_string
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
