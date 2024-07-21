@@ -6,28 +6,69 @@
 }
 
 /* Estilo básico para el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: url('https://static.vecteezy.com/system/resources/previews/003/461/898/large_2x/shopping-cart-with-yellow-background-free-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* Contenedor principal */
+/* Estilos para el contenido principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container {
+    flex: 1;
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Flexbox */
-.flex {
-    display: flex;
+/* Hero section */
+.hero {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para texto legible */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
 }
 
-body {
-    background-color: #f8f9fa;
+/* Footer */
+footer {
+    background: linear-gradient(to right, #2600ff, #a7c7e7); /* Azul a celeste pastel */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
+/* Navegación */
+nav {
+    background: linear-gradient(to right, #2600ff, #a7c7e7); /* Azul a celeste pastel */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para las tarjetas */
 .card {
     height: 100%;
     border: none;
@@ -35,16 +76,16 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
+    background-color: transparent; /* Fondo transparente */
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: transparent; /* Fondo transparente */
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .card-img-top {
@@ -70,49 +111,139 @@ body {
     text-align: center;
 }
 
-.btn-primary {
-    background-color: #6c63ff;
+/* Clases para hacer el fondo transparente */
+.transparent-card {
+    background-color: transparent; /* Fondo completamente transparente */
     border: none;
-    transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #5549d8;
+.transparent-card .card-body {
+    background-color: transparent; /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 5px;
 }
 
+/* Estilo para los botones */
+.btn {
+    display: inline-flex;
+    background: linear-gradient(to bottom, #007bff, #0056b3); /* Azul */
+    color: #fff; /* Texto blanco */
+    height: 50px;
+    padding: 10px 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición de color */
+    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: none; /* Elimina cualquier sombra que pueda parecer un borde */
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #0056b3, #007bff); /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos específicos para botones */
+.btn-continue-shopping, .btn-process-payment, .btn-show-boleta {
+    border-radius: 1em; /* Bordes redondeados */
+    max-width: 100%; /* Ajusta el tamaño al contenedor */
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: auto;
+    border:  solid transparent;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form label {
+    font-weight: 700; /* Cambia el grosor de las letras a 700 solo para labels dentro del formulario */
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.7em;
+    color: #fff;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #0056b3, #007bff);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para la tabla */
 .table img {
     max-width: 100px;
     height: auto;
 }
 
 .table thead th {
-    background-color: #6c63ff;
+    background: linear-gradient(to bottom, #6c63ff, #5549d8);
     color: white;
     border-bottom: 2px solid #ffffff;
 }
 
 .table tbody tr:hover {
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilos específicos para botones personalizados */
+.btn-custom {
+    background: linear-gradient(to bottom, #2600ff, #5549d8);
+}
+
+.btn-custom:hover {
+    background: linear-gradient(to bottom, #5549d8, #2600ff);
 }
 
 .btn-danger {
-    background-color: #dc3545;
+    background: linear-gradient(to bottom, #dc3545, #bd2130);
     border-color: #dc3545;
 }
 
 .btn-danger:hover {
-    background-color: #c82333;
+    background: linear-gradient(to bottom, #bd2130, #c82333);
     border-color: #bd2130;
-}
-
-.btn-primary {
-    background-color: #6c63ff;
-    border-color: #ffffff;
-}
-
-.btn-primary:hover {
-    background-color: #5549d8;
-    border-color: #ffffff;
 }
 
 .total {
@@ -126,134 +257,39 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #2600ff; /* Azul oscuro */
+    background: linear-gradient(to bottom, #2600ff, #a7c7e7); /* Azul a celeste pastel */
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-/* Navegación */
-nav {
-    background-color: #2600ff; /* Azul oscuro */
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilo para los botones */
-.btn {
-    display: inline-block;
-    background-color: #007bff; /* Azul */
-    color: #fff; /* Texto blanco */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Alineación de botones */
-    transition: background-color 0.3s ease; /* Transición de color */
-    text-align: center; /* Centra el texto dentro del botón */
-}
-
-/* Estilo para los botones en la cuadrícula */
-.btn-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /* Crea 12 columnas iguales */
-    gap: 10px; /* Espaciado entre columnas */
-    margin-top: 20px;
-}
-
-/* Estilo para el botón Seguir Comprando */
-.btn-continue-shopping {
-    grid-column: 2; /* Ocupa la columna 2 */
-}
-
-/* Estilo para el botón Proceso de Pago */
-.btn-process-payment {
-    grid-column: 6; /* Ocupa la columna 6 */
-}
-
-/* Estilo para el botón Mostrar Boleta */
-.btn-show-boleta {
-    grid-column: 10; /* Ocupa la columna 10 */
-}
-
-/* Efecto hover para los botones */
-.btn-container .btn:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
-}
-
-/* Formulario */
-form {
-    max-width: 600px;
-    margin: auto;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-}
-
-form div + div {
-    margin-top: 1em;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-input,
-textarea {
-    border: 1px solid #ccc;
-    padding: 0.5em;
-    font-size: 1em;
+/* Mapa */
+.map-container iframe {
     width: 100%;
-    box-sizing: border-box;
+    height: 600px;
 }
 
-button {
-    padding: 0.7em;
-    color: #fff;
-    background-color: #007bff;
+/* Contacto */
+.contact-info {
+    float: right;
+    text-align: right;
+    background-color: transparent; /* Fondo transparente */
+    color: #000; /* Color del texto en la sección de contacto */
+}
+/* Eliminar la línea negra indeseada */
+.contact-divider {
     border: none;
-    border-radius: 1em;
-    cursor: pointer;
-    font-size: 1em;
+    border-top: 1px solid transparent; /* Cambia el color si lo necesitas */
+    margin: 0 auto; /* Centra el elemento */
+    width: 50%;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Redes Sociales */
+.social-icons a {
+    margin-right: 10px;
+    color: #000;
 }
 
-/* Tabla */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table th,
-table td {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Pie de página */
-footer {
-    background-color: #2600ff; /* Azul oscuro */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.social-icons a:hover {
+    color: #007bff;
 }
