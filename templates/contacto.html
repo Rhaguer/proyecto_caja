@@ -15,119 +15,157 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary"
-            data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand"
-                    href="{{ url_for('index') }}">HaguerMarket</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="{{ url_for('index') }}">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('listar_productos') }}">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('nuevo') }}">Agregar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('carrito') }}">Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('contacto') }}">Contacto</a>
-                        </li>
-                    </ul>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary"
+                data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand"
+                        href="{{ url_for('index') }}">HaguerMarket</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="{{ url_for('index') }}">
+                                    <img
+                                        src="{{ url_for('static', filename='img/inicio.png') }}"
+                                        alt="Inicio" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="{{ url_for('listar_productos') }}">
+                                    <img
+                                        src="{{ url_for('static', filename='img/productos.png') }}"
+                                        alt="Productos" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="{{ url_for('nuevo') }}">
+                                    <img
+                                        src="{{ url_for('static', filename='img/agregar.png') }}"
+                                        alt="Agregar" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="{{ url_for('carrito') }}">
+                                    <img
+                                        src="{{ url_for('static', filename='img/carrito.png') }}"
+                                        alt="Carrito" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="{{ url_for('contacto') }}">
+                                    <img
+                                        src="{{ url_for('static', filename='img/contacto.png') }}"
+                                        alt="Contacto" class="nav-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="container mt-5">
-            <center>
-                <h2 class="mb-4">Contacto</h2>
-            </center>
-            <hr class="contact-divider">
-            <center>
-                <div>
-                    <p><strong>Nombre:</strong> Ricardo Haguer</p>
-                    <p><strong>Asignatura:</strong> Bases de Datos no
-                        Estructuradas</p>
-                    <p><strong>Carrera:</strong> Ingeniería en Informática</p>
-                    <p><strong>Instituto:</strong> Inacap</p>
-                    <p><strong>Docente:</strong> Victor Javier Andrade
-                        Farías</p>
-                    <p><strong>Correo Electrónico:</strong> <a
-                            href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a></p>
-                    <p><strong>Año:</strong> 19/07/2024</p>
-
-                </div>
-            </center>
-        </div>
-        <div class="container mt-5">
-            <center><h3 class="mb-4">Ubicación</h3></center>
-            <div class="map-container">
+            </nav>
+            <div class="container mt-5">
                 <center>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7537244952055!2d-70.58597221877329!3d-33.58574303568418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d718a032972d%3A0x45da5699698e2261!2sINACAP%20Puente%20Alto!5e0!3m2!1ses!2ses!4v1721457388226!5m2!1ses!2ses"
-                        frameborder="0" allowfullscreen></iframe></center>
+                    <h1 class="mb-4">Contacto</h1>
+                </center>
+                <hr class="contact-divider">
+                <center>
+                    <div class="contact-info">
+                        <h5>
+                            <p><strong>Nombre:</strong> Ricardo Haguer</p>
+                            <p><strong>Asignatura:</strong> Bases de Datos no
+                                Estructuradas</p>
+                            <p><strong>Carrera:</strong> Ingeniería en
+                                Informática</p>
+                            <p><strong>Instituto:</strong> Inacap</p>
+                            <p><strong>Docente:</strong> Victor Javier Andrade
+                                Farías</p>
+                            <p><strong>Correo Electrónico:</strong> <a
+                                    href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a></p>
+                            <p><strong>Año:</strong> 19/07/2024</p>
+                        </h5>
+                    </div>
+
+                </center>
             </div>
-        </div>
-        <div class="container mt-5 contact-info">
-            <h3 class="mb-4">Inacap Puente Alto</h3>
-            <hr class="contact-divider">
-            <h4 class="pt-2">
-                <a href="https://www.inacap.cl" target="_blank">
-                    <img
-                        src="https://portales.inacap.cl/web_resources/themes/portal/img/logoFooter.png"
-                        alt="Inacap Puente Alto" style="height: 50px;">
-                </a>
-            </h4>
-            <i class="fas fa-globe" style="color:#000"></i> Av. Concha y Toro
-            2730, 8150215 Puente Alto, Región Metropolitana<br>
-            <h4 class="pt-2">Contacto</h4>
-            <i class="fab fa-whatsapp" style="color:#000"></i> <a
-                href="tel:+56963325630">+56963325630</a><br>
-            <i class="fa fa-envelope" style="color:#000"></i> <a
-                href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a><br>
-            <h4 class="pt-2">Síguenos en Redes Sociales</h4>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/inacap/" target="_blank"
-                    title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/inacap" target="_blank"
-                    title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://www.linkedin.com/company/inacap"
-                    target="_blank" title="LinkedIn"><i
-                        class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://www.twitter.com/inacap" target="_blank"
-                    title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.youtube.com/@CANALINACAP" target="_blank"
-                    title="YouTube" class="fab fa-youtube fa-2x"></a>
-                <a href="https://www.tiktok.com/tag/inacap?lang=es"
-                    target="_blank" title="TikTok"><i
-                        class="fab fa-tiktok fa-2x"></i></a>
-                <a href="https://www.x.com/inacap" target="_blank" title="X"><i
-                        class="fab fa-x-twitter fa-2x"></i></a>
+            <div class="container mt-5">
+                <center><h3 class="mb-4">Ubicación</h3></center>
+                <div class="map-container">
+                    <center>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7537244952055!2d-70.58597221877329!3d-33.58574303568418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d718a032972d%3A0x45da5699698e2261!2sINACAP%20Puente%20Alto!5e0!3m2!1ses!2ses!4v1721457388226!5m2!1ses!2ses"
+                            frameborder="0" allowfullscreen></iframe></center>
+                </div>
             </div>
-        </div>
-        <footer class="text-center">
-            <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos los derechos
-                reservados.</p>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+            <div class="container mt-5 contact-info">
+                <div class="contact-details">
+                    <h3 class="mb-4">Inacap Puente Alto</h3>
+                    <hr class="contact-divider">
+                    <h2 class="pt-2">
+                        <a href="https://www.inacap.cl" target="_blank">
+                            <img
+                                src="https://portales.inacap.cl/web_resources/themes/portal/img/logoFooter.png"
+                                alt="Inacap Puente Alto" style="height: 50px;">
+                        </a>
+                    </h2>
+                    <h4 class="pt-2">
+                        <i class="fas fa-globe" style="color:#000"></i> Av.
+                        Concha y Toro 2730, 8150215 Puente Alto, Región
+                        Metropolitana
+                    </h4>
+                    <h4 class="pt-2">Contacto</h4>
+                    <p><i class="fab fa-whatsapp" style="color:#000"></i> <a
+                            href="tel:+56963325630">+56963325630</a></p>
+                    <p><i class="fa fa-envelope" style="color:#000"></i> <a
+                            href="mailto:ricardo.haguer@inacapmail.cl">ricardo.haguer@inacapmail.cl</a></p>
+                    <h4 class="pt-2">Síguenos en Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/inacap/"
+                            target="_blank" title="Instagram"><i
+                                class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.facebook.com/inacap"
+                            target="_blank" title="Facebook"><i
+                                class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/company/inacap"
+                            target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://www.twitter.com/inacap" target="_blank"
+                            title="Twitter"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://www.youtube.com/@CANALINACAP"
+                            target="_blank" title="YouTube"><i
+                                class="fab fa-youtube fa-2x"></i></a>
+                        <a href="https://www.tiktok.com/tag/inacap?lang=es"
+                            target="_blank" title="TikTok"><i
+                                class="fab fa-tiktok fa-2x"></i></a>
+                        <a href="https://www.x.com/inacap" target="_blank"
+                            title="X"><i class="fab fa-x-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center">
+                <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos los
+                    derechos
+                    reservados.</p>
+            </footer>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        </body>
+    </html>

@@ -33,102 +33,121 @@
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="{{ url_for('index') }}">Inicio</a>
+                                href="{{ url_for('index') }}">
+                                <img
+                                    src="{{ url_for('static', filename='img/inicio.png') }}"
+                                    alt="Inicio" class="nav-icon">
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="{{ url_for('listar_productos') }}">Productos</a>
+                                href="{{ url_for('listar_productos') }}">
+                                <img
+                                    src="{{ url_for('static', filename='img/productos.png') }}"
+                                    alt="Productos" class="nav-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('nuevo') }}">
+                                <img
+                                    src="{{ url_for('static', filename='img/agregar.png') }}"
+                                    alt="Agregar" class="nav-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('carrito') }}">
+                                <img
+                                    src="{{ url_for('static', filename='img/carrito.png') }}"
+                                    alt="Carrito" class="nav-icon">
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="{{ url_for('nuevo') }}">Agregar</a>
+                                href="{{ url_for('contacto') }}">
+                                <img
+                                    src="{{ url_for('static', filename='img/contacto.png') }}"
+                                    alt="Contacto" class="nav-icon">
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('carrito') }}">Carrito</a>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="{{ url_for('contacto') }}">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            </nav>
-
-            <div class="container mt-5">
-                <h2 class="text-center">Crear Producto</h2>
-                <form action="/crear_producto" method="post">
-                    <div class="form-group">
-                        <label for="id">ID:</label>
-                        <input type="number" class="form-control" id="id"
-                            name="id"
-                            value="{{ nuevo_id }}" readonly required />
-                        <input type="hidden" id="hidden_id" name="id"
-                            value="{{ nuevo_id }}" />
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre"
-                            name="nombre" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="descripcion">Descripción:</label>
-                        <input type="text" class="form-control" id="descripcion"
-                            name="descripcion" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="categories">Categorías (separadas por
-                            comas):</label>
-                        <input type="text" class="form-control" id="categories"
-                            name="categories" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="unidadMedida">Unidad Medida:</label>
-                        <input type="text" class="form-control"
-                            id="unidadMedida"
-                            name="unidadMedida" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="valorConversion">Valor Conversión:</label>
-                        <input type="number" class="form-control"
-                            id="valorConversion" name="valorConversion"
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <label for="precio">Precio:</label>
-                        <input type="number" class="form-control" id="precio"
-                            name="precio" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="stockInicial">Stock Inicial:</label>
-                        <input type="number" class="form-control"
-                            id="stockInicial"
-                            name="stockInicial" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="stock">Stock:</label>
-                        <input type="number" class="form-control" id="stock"
-                            name="stock" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="urlFoto">URL de la Foto:</label>
-                        <input type="url" class="form-control" id="urlFoto"
-                            name="urlFoto" required />
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Guardar
-                        Producto</button>
-                </form>
             </div>
+        </nav>
 
-            <footer>
-                <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos los
-                    derechos
-                    reservados.</p>
-            </footer>
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-        </body>
-    </html>
+        <div class="container mt-5">
+            <h2 class="text-center">Crear Producto</h2>
+            <form action="/crear_producto" method="post">
+                <div class="form-group">
+                    <label for="id">ID:</label>
+                    <input type="number" class="form-control" id="id"
+                        name="id"
+                        value="{{ nuevo_id }}" readonly required />
+                    <input type="hidden" id="hidden_id" name="id"
+                        value="{{ nuevo_id }}" />
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre"
+                        name="nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" class="form-control" id="descripcion"
+                        name="descripcion" required />
+                </div>
+                <div class="form-group">
+                    <label for="categories">Categorías (separadas por
+                        comas):</label>
+                    <input type="text" class="form-control" id="categories"
+                        name="categories" required />
+                </div>
+                <div class="form-group">
+                    <label for="unidadMedida">Unidad Medida:</label>
+                    <input type="text" class="form-control"
+                        id="unidadMedida"
+                        name="unidadMedida" required />
+                </div>
+                <div class="form-group">
+                    <label for="valorConversion">Valor Conversión:</label>
+                    <input type="number" class="form-control"
+                        id="valorConversion" name="valorConversion"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" class="form-control" id="precio"
+                        name="precio" required />
+                </div>
+                <div class="form-group">
+                    <label for="stockInicial">Stock Inicial:</label>
+                    <input type="number" class="form-control"
+                        id="stockInicial"
+                        name="stockInicial" required />
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock:</label>
+                    <input type="number" class="form-control" id="stock"
+                        name="stock" required />
+                </div>
+                <div class="form-group">
+                    <label for="urlFoto">URL de la Foto:</label>
+                    <input type="url" class="form-control" id="urlFoto"
+                        name="urlFoto" required />
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Guardar
+                    Producto</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos los
+                derechos
+                reservados.</p>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

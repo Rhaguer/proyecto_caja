@@ -13,42 +13,46 @@
             crossorigin="anonymous" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary"
-            data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand"
-                    href="{{ url_for('index') }}">HaguerMarket</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="{{ url_for('index') }}">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('listar_productos') }}">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('nuevo') }}">Agregar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ url_for('carrito') }}">Carrito</a>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ url_for('index') }}">HaguerMarket</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="{{ url_for('contacto') }}">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
+                                    <img src="{{ url_for('static', filename='img/inicio.png') }}" alt="Inicio" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('listar_productos') }}">
+                                    <img src="{{ url_for('static', filename='img/productos.png') }}" alt="Productos" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('nuevo') }}">
+                                    <img src="{{ url_for('static', filename='img/agregar.png') }}" alt="Agregar" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('carrito') }}">
+                                    <img src="{{ url_for('static', filename='img/carrito.png') }}" alt="Carrito" class="nav-icon">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('contacto') }}">
+                                    <img src="{{ url_for('static', filename='img/contacto.png') }}" alt="Contacto" class="nav-icon">
+                                </a>
                             </li>
                         </ul>
                     </div>

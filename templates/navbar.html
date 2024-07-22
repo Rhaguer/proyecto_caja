@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar con Imágenes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
+                        <img src="/static/img/inicio.png" alt="Inicio">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('listar_productos') }}">
+                        <img src="/static/img/productos.png" alt="Productos">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('nuevo') }}">
+                        <img src="/static/img/agregar.png" alt="Agregar">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('carrito') }}">
+                        <img src="/static/img/carrito.png" alt="Carrito">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contacto') }}">
+                        <img src="/static/img/contacto.png" alt="Contacto">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
