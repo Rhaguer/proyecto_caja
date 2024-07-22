@@ -1,0 +1,64 @@
+/* Contenedor del interruptor */
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centra verticalmente el interruptor en la pantalla */
+    background: #000; /* Fondo negro para mayor contraste */
+}
+
+/* Oculta el checkbox real */
+#switch {
+    display: none;
+}
+
+/* Estilo del label que actúa como el interruptor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px; /* Tamaño aumentado para mayor impacto */
+    height: 60px; /* Tamaño aumentado para mayor impacto */
+}
+
+/* Estilo del slider (parte móvil del interruptor) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333; /* Color negro del interruptor con un toque gris oscuro para el efecto 3D */
+    border: 4px transparent; /* Borde negro */
+    border-radius: 50px; /* Bordes redondeados para el interruptor */
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 30, 30), inset 0 100 0px rgba(255, 255, 255, 0.2); /* Sombra exterior más profunda e interior para un efecto 3D más marcado */
+    transform: translateZ(0); /* Asegura que el efecto 3D sea visible */
+}
+
+/* El círculo interior del slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 50px; /* Tamaño aumentado para mayor visibilidad */
+    width: 50px; /* Tamaño aumentado para mayor visibilidad */
+    border-radius: 50%;
+    background-color: #58565603; /* Color blanco para el círculo interior */
+    left: 4px;
+    bottom: 5px;
+    transition: 0.4s;
+    box-shadow: 0 4px 10px rgb(0, 0, 10); /* Sombra para el círculo interior para más relieve */
+}
+
+/* Efecto cuando el interruptor está activado */
+#switch:checked + .switch .slider {
+    background-color: #000; /* Color negro del interruptor */
+    border-color: transpatent; /* Borde verde cuando está encendido */
+    box-shadow: 0 8px 25px rgba(0, 255, 0, 0.8), inset 0 0 15px rgba(0, 255, 0, 0.3); /* Sombra verde para el efecto 3D más pronunciado */
+}
+
+/* Movimiento del círculo interior cuando el interruptor está activado */
+#switch:checked + .switch .slider:before {
+    transform: translateX(60px); /* Desplazamiento aumentado para más impacto */
+    background-color: rgba(11, 232, 11, 0.233); /* Color verde claro para el círculo interior cuando está encendido */
+}
