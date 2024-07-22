@@ -40,8 +40,8 @@ html, body {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, #2600ff, #a7c7e7); /* Azul a celeste pastel */
-    color: #fff;
+    background: linear-gradient(to right, #0056b3, #0099ff); /* Azul a celeste pastel */
+    color: #ffffff;
     padding: 20px;
     text-align: center;
     flex-shrink: 0;
@@ -49,7 +49,7 @@ footer {
 
 /* Navegación */
 nav {
-    background: linear-gradient(to right, #2600ff, #a7c7e7); /* Azul a celeste pastel */
+    background: linear-gradient(to right, #0056b3, #0099ff); /* Azul a celeste pastel */
     padding: 10px;
 }
 
@@ -64,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 

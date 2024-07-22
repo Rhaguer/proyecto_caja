@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sistema de Venta - HaguerMarket</title>
+        <title>Carrito de Compras - HaguerMarket</title>
         <link rel="stylesheet"
             href="{{ url_for('static', filename='style.css') }}" />
         <link
@@ -11,11 +11,11 @@
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous" />
-        <link rel="stylesheet"
-            href="{{ url_for('static', filename='style.css') }}" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary"
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light"
+            style="background: linear-gradient(to right, #0056b3, #0099ff);"
             data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand"
@@ -78,7 +78,8 @@
                         <td>{{ producto.subtotal | format_currency(0) }}</td>
                         <td class="imagenes-centradas"><img
                                 src="{{ producto.urlFoto }}"
-                                alt="{{ producto.nombre }}" /></td>
+                                alt="{{ producto.nombre }}"
+                                style="width: 100px; height: auto;" /></td>
                         <td>
                             <form
                                 action="{{ url_for('quitar_del_carrito', id=producto._id) }}"
@@ -98,12 +99,13 @@
 
             <div class="btn-container mt-3">
                 <a href="{{ url_for('listar_productos') }}"
-                    class="btn btn-custom">Seguir comprando</a>
-                <form action="{{ url_for('procesar_pago') }}" method="post">
-                    <button type="submit" class="btn btn-custom">Procesar
+                    class="btn btn-primary">Seguir comprando</a>
+                <form action="{{ url_for('procesar_pago') }}" method="post"
+                    class="d-inline">
+                    <button type="submit" class="btn btn-primary">Procesar
                         Pago</button>
                 </form>
-                <button type="button" class="btn btn-custom"
+                <button type="button" class="btn btn-primary"
                     data-bs-toggle="modal" data-bs-target="#boletaModal">Mostrar
                     Boleta</button>
             </div>
@@ -114,6 +116,15 @@
             aria-labelledby="boletaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
+                    <!-- Navbar en el Modal -->
+                    <nav class="navbar navbar-expand-lg navbar-light"
+                        style="background: linear-gradient(to right, #0056b3, #0099ff);"
+                        data-bs-theme="dark">
+                        <div class="container-fluid">
+                            <span class="navbar-brand">HaguerMarket</span>
+                        </div>
+                    </nav>
+
                     <div class="modal-header">
                         <h5 class="modal-title" id="boletaModalLabel">Boleta de
                             Compra</h5>
@@ -164,11 +175,20 @@
                         <button type="button" class="btn btn-secondary"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
+
+                    <!-- Footer en el Modal -->
+                    <footer class="bg-light text-center py-3"
+                        style="background: linear-gradient(to right, #0056b3, #0099ff);">
+                        <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos
+                            los derechos reservados.</p>
+                    </footer>
                 </div>
             </div>
         </div>
 
-        <footer class="bg-light text-center py-3 mt-5">
+        <!-- Footer fijo para Carrito -->
+        <footer class="bg-light text-center py-3"
+            style="background: linear-gradient(to right, #0056b3, #0099ff);">
             <p>&copy; 2024 Sistema de Venta - HaguerMarket. Todos los derechos
                 reservados.</p>
         </footer>
@@ -178,20 +198,17 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-                function updateDateTime() {
-                    const now = new Date();
-                    const date = now.toLocaleDateString('es-ES');
-                    const time = now.toLocaleTimeString('es-ES');
-                    document.getElementById('fecha').textContent = `Fecha: ${date}, Hora: ${time}`;
-                }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            function updateDateTime() {
+                const now = new Date();
+                const date = now.toLocaleDateString('es-ES');
+                const time = now.toLocaleTimeString('es-ES');
+                document.getElementById('fecha').textContent = `Fecha: ${date}, Hora: ${time}`;
+            }
 
-                // Actualizar la fecha y hora cuando se abre el modal
-                const boletaModal = document.getElementById('boletaModal');
-                boletaModal.addEventListener('show.bs.modal', () => {
-                    updateDateTime();
-                });
-            });
-        </script>
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+        });
+    </script>
     </body>
 </html>
