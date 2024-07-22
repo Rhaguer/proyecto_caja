@@ -68,6 +68,18 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilos para el navbar */
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+}
+
+/* Cambia el color de las letras del navbar al pasar el ratón por encima */
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
 /* Estilos para las tarjetas */
 .card {
     height: 100%;
