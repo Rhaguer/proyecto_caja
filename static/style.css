@@ -33,11 +33,11 @@ html, body {
 /* Hero section */
 .hero {
     flex: 1;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para texto legible */
     color: white;
     text-align: center;
     padding: 50px 0;
 }
+
 
 /* Footer */
 footer {
@@ -103,7 +103,7 @@ nav ul li a {
 
 /* Estilo para los íconos del navbar */
 .nav-icon {
-    width: 30px; /* Ajusta el tamaño de los íconos según sea necesario */
+    width: 40px;
     height: auto;
 }
 
